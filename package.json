@@ -1,0 +1,73 @@
+{
+  "name": "chess-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --config config/webpack.config.js",
+    "build:analysis": "cross-env NODE_ENV=production ANALY=true webpack --config config/webpack.config.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/crypto-js": "^4.1.1",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "babel-jest": "^29.2.2",
+    "babel-plugin-import": "^1.13.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.26.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "esbuild-loader": "^2.18.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-react": "^7.30.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "mini-css-extract-plugin": "^2.5.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.3",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.66.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "antd": "^4.20.5",
+    "axios": "^0.25.0",
+    "crypto-js": "^4.1.1",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "typescript": "^4.7.4"
+  }
+}
